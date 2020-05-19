@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Document</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Vollkorn:ital,wght@0,400;0,700;1,400&family=Voltaire&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-         
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e4b4320b1c.js" crossorigin="anonymous"></script>
+    <title>ANALISADOR DE NUMEROS</title>
 </head>
 
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index.html"><img src="logo.png" alt="logo" width="100px" height="50px"></a>
-            <h1>Analisador de Números</h1>
+
+    <div class="grid-container">
+
+        <!-- Cabecalho -->
+        
+        <header class="grid-item-1">
+            
+            <div>
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo do site"></a>
+                <h1 id="titulo">Analisador de Números</h1>     
+            </div>
+                  
+                        
         </header>
 
-        <aside>
+
+
+
+        <!-- corpo -->
+
+
+        <section class="grid-item-2">
             <p id="p1"> <strong>Digite um número entre 1 e 100 para cadastrar</strong></p>
 
-            <div>
-                <input type="number" name="fnun" id="fnun">
-                <input type="button" class="btn btn-primary"  value="ADICIONAR" onclick="adicionar()" id="botao_adicionar" >               
+                <div>
+                    <input type="number" name="fnun" id="fnun">
+                    <input type="button" class="btn btn-primary"  value="Adicionar" onclick="adicionar()" id="botao_adicionar" >
 
-            </div>
+                </div>
+                
+    </section> 
 
-            <select name="flista" id="flista" size="10"></select>
-            <br>
-
-            <input type="button" class="btn btn-success " value="PROCESSAR" onclick="processar()" id="botao_processar">
-
-        
-        </aside>
-
-        <main>
-            <div><h1>RESULTADO:</h1></div>
-            <div id="res"></div>
-        </main>
-        
+    <div class="grid-item-3">
+        <select name="flista" id="flista" ></select>
 
     </div>
     
-    <script type="text/javascript" src="script.js"></script> 
-    
+
+        <input type="button" class="btn btn-success " value="PROCESSAR" onclick="processar()" id="botao_processar">
+        <div id="res"></div>
+
+
+
+  
+ 
+</div> 
+
+<script src="script.js"></script>
 </body>
-
-    
-
-
 </html>
